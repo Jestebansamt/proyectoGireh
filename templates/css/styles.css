@@ -1,0 +1,281 @@
+/* GLOBALES */
+
+:root{
+    --azul-bg: #A5D4F2;
+    --text-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.noticias{
+    background-color: var(--azul-bg);
+    border-radius: 40px 40px 0px 0px; 
+}
+
+.noticias .title{
+    color: #000;
+    text-shadow: var(--text-shadow);
+    font-family: Raleway;
+    font-size: 6.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.noticias p{
+    color: #000;
+    font-family: Raleway;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.noticias .detalles div{
+    margin-bottom: 2.5rem;
+}
+
+.noticias .detalles h4{
+    color: #000;
+    font-family: Raleway;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.noticias .notis {
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: var(#C2DADC, #C2DADC);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 24px;
+}
+
+.noticias .notis h3 {
+    color: #000;
+    font-family: Raleway;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.noticias .notis h2{
+    color: #000;
+    font-family: Raleway;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 25px 0px;
+}
+
+.noticias .notis p{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.noticias .notis a{
+    color: #1A5196;
+    font-family: Raleway;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.actividades{
+    background: #FFF;
+    padding: 40px;
+}
+
+.actividades p{
+    color: #000;
+    font-family: Raleway;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.actividades .detalles{
+    padding: 40px;
+}
+.actividades .detalles h1{
+    color: #000;
+    text-shadow: var(--text-shadow);
+    font-family: Raleway;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.actividades .actis h1{
+    color:  #4780C7;
+    font-family: Raleway;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.actividades .actis .border{
+    border-radius: 10px;
+    border: 1px solid #909090;
+    background: rgba(217, 217, 217, 0.00);
+    padding: 40px;
+}
+
+.actividades .actis .border a{
+    color: #4780C7;
+}
+
+.actividades button{
+    margin-top: 40px;
+}
+
+.acerca{
+    background-color: var(azul-bg);
+    padding: 80px;
+}
+
+.acerca h1{
+    color: #000;
+    text-shadow: var(--text-shadow);
+    font-family: Raleway;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.acerca p{
+    color: #000;
+    font-family: Raleway;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    margin-bottom: 30px;
+}
+
+.eventos{
+    background-color: #FFF;
+    padding: 80px;
+}
+
+.eventos .info h1{
+    color: #000;
+    text-shadow: var(--text-shadow);
+    font-family: Raleway;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.eventos .info p{
+    color: #4780C7;
+    font-family: Raleway;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.eventos .detalles{
+    margin-top: 40px;
+    margin-bottom: 40px;
+} 
+
+.eventos .detalles h1{
+    color: #4780C7;
+    font-family: Raleway;
+    font-size: 1.063rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.eventos .detalles p{
+    color: #000;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 1.063rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px; 
+    letter-spacing: 0.17px;
+    margin-top: 20px;
+}
+
+.contacto {
+    background-color: var(azul-bg);
+    padding: 80px;
+    border-radius: 0px 0px 40px 40px ;
+}
+
+.contacto .detalles h1{
+    color: #000;
+    text-shadow: var(--text-shadow);
+    font-family: Raleway;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.contacto .detalles h4{
+    color: #000;
+    font-family: Raleway;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.contacto .detalles img{
+    margin-top: 20px;
+}
+
+
+
+@media (min-width: 768px) {
+    .actividades .colaboraciones{
+        margin: auto;
+        width: 50%;
+        margin-top: 20px;
+    }   
+
+    .contacto .detalles{
+        width: 60%;
+        margin: auto;
+    }
+    .noticias{
+        padding: 80px;
+    }
+
+
+}
+@media (max-width: 767.98px){
+    .noticias .detalles{
+        text-align: center;
+    }    
+    .actividades .colaboraciones{
+        margin-top: 20px;
+    } 
+    .actividades .actis .border{
+        margin-top: 20px;
+    }
+}
