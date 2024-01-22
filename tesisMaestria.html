@@ -581,34 +581,38 @@
         }
 
         /* Estilos adicionales  */
-        p{
+        p {
             font-size: 1rem;
         }
+
         h1 {
             font-size: 5rem;
             letter-spacing: 1px;
             font-weight: 600;
         }
+
         h3 {
             font-size: 2rem;
             color: #0B3D7C;
             font-weight: 600;
         }
-        main{
+
+        main {
             background-color: var(--azul-bg);
             margin-top: -50px;
+            padding-bottom: 30px;
         }
 
-        .subtitulo{
+        .subtitulo {
             font-size: 20px;
             font-weight: 400;
             letter-spacing: 0.2px;
             width: 360px;
-            margin:0px auto;
+            margin: 0px auto;
             padding-top: 20px;
         }
 
-        .logo{
+        .logo {
             width: 180px;
             height: 110px;
             object-fit: cover;
@@ -617,167 +621,179 @@
             margin-right: auto;
             display: block;
         }
-        .contenedorIntegrantes{
-            margin-top: 50px;
-            display: flex;
-            flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente fila en pantallas pequeñas */
-            justify-content: start;
-        }
-        .integrantes{
-            margin-top: 25px;
-            padding-bottom: 35px;
-         
-        }
-        .integrante{
-            background-color: white;
-            padding: 20px 30px;
-            margin: 0px 20px 30px 0px;
-            height: 392px;
-            width: 252px;
-            display: flex;
-            flex-direction: column;
-            gap: 7px;
-            border-radius: 20px;
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        }
 
-        img{
-            width: 100px;
-            height: auto;
-            border-radius: 100%;
-            margin: 10px auto;    
-        }
-        button{
-            background-color: var( --azul-1) ;
-            color: white;
-            font-weight: 600;
-        }
-        button:hover{
-            filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.50));
-        }
 
-        header div{
+        header div {
             padding: 75px 0px;
         }
-        
-        .wave{
+
+        .wave {
             margin: auto;
             top: 400px;
             z-index: -1;
             height: 380px;
             width: 100%;
-            
             border-radius: 0px;
             background-image: url("templates/images/logo-Gireh.png");
         }
 
+        .containerBuscador {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .buscador {
+            width: 271px;
+            height: 35px;
+            margin-bottom: 60px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.90);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        }
+        .buscador img{
+            padding-right: 9px;
+            height: 32px;
+            transform: scaleX(-1);
+        }
+
+        table {
+            border-radius: 10px;
+            width: 70vw;
+            margin: auto;
+            background: #FFF;
+            box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        tr {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        tr:not(:last-child) {
+            border-bottom: 1px solid rgb(130, 130, 130);
+        }
+
+        td {
+
+            display: flex;
+            padding: 10px 20px;
+            flex-direction: column;
+            align-items: center;
+            width: 20%;
+        }
+
+        tr:first-child td {
+            font-weight: 600;
+            font-size: 18px;
+            background: var(--Blue-2, #5DB1EC);
+        }
+
         @media (max-width: 992px) {
-            .container{
-                margin-left: 50px ;
+            .container {
+                margin-left: 0px;
             }
-            h1{
+
+            h1 {
                 font-size: 2rem;
             }
-            .subtitulo{
+
+            .subtitulo {
                 font-size: 1rem;
-                
+
             }
-            header .container{
-                margin-left: 0px ;
+
+            header .container {
+                margin-left: 0px;
             }
-            
+
         }
-       
     </style>
 
 </head>
 
-<body >
+<body>
 
-    <header >
+    <header>
         <div class="container">
             <img class="logo" src="templates/images/logo-Gireh.png">
-            <h1 class="text-center">Integrantes</h1>
+            <h1 class="text-center">Tesis de Maestría</h1>
             <p class="text-center subtitulo">Grupo de Investigación en Ingeniería de Recursos Hídricos</p>
         </div>
-    
+
     </header>
     <div>
         <img class="wave" src="templates/images/waves.png">
     </div>
 
     <main>
-       
-        <section class="container integrantes">
-            <h3>Directores</h3>
-            <div class="row contenedorIntegrantes">
-                <div class="col-xs-4 integrante">
-                    <img src="templates/images/integrante.png" alt="Imagen del director">
-                    <p><strong>Rafael Orlando Ortiz Mosquera</strong></p>
-                    <p><strong>Correo</strong> <br>roortizm@unal.edu.co</p>
-                    <p><strong>Telefono</strong> <br>+57 (1) 316 5000</p>
-                    <button class="btn">Hoja de vida</button>
-                </div>
-                <div class="col-xs-4 integrante">
-                    <img src="templates/images/integrante.png" alt="Imagen del director">
-                    <p><strong>Rafael Orlando Ortiz Mosquera</strong></p>
-                    <p><strong>Correo</strong> <br>roortizm@unal.edu.co</p>
-                    <p><strong>Telefono</strong> <br>+57 (1) 316 5000</p>
-                    <button class="btn">Hoja de vida</button>
-                </div>
+
+        <section class="container containerBuscador">
+            <div class="buscador">
+                <img src="/templates/images/search.png">
             </div>
+
         </section>
-        <section class="container integrantes">
-            <h3>Docentes</h3>
-            <div class="row contenedorIntegrantes">
-                <div class="col-xs-4 integrante">
-                    <img src="templates/images/integrante.png" alt="Imagen del director">
-                    <p><strong>Rafael Orlando Ortiz Mosquera</strong></p>
-                    <p><strong>Correo</strong> <br>roortizm@unal.edu.co</p>
-                    <p><strong>Telefono</strong> <br>+57 (1) 316 5000</p>
-                    <button class="btn">Hoja de vida</button>
-                </div>
-                <div class="col-xs-4 integrante">
-                    <img src="templates/images/integrante.png" alt="Imagen del director">
-                    <p><strong>Rafael Orlando Ortiz Mosquera</strong></p>
-                    <p><strong>Correo</strong> <br>roortizm@unal.edu.co</p>
-                    <p><strong>Telefono</strong> <br>+57 (1) 316 5000</p>
-                    <button class="btn">Hoja de vida</button>
-                </div>
-                <div class="col-xs-4 integrante">
-                    <img src="templates/images/integrante.png" alt="Imagen del director">
-                    <p><strong>Rafael Orlando Ortiz Mosquera</strong></p>
-                    <p><strong>Correo</strong> <br>roortizm@unal.edu.co</p>
-                    <p><strong>Telefono</strong> <br>+57 (1) 316 5000</p>
-                    <button class="btn">Hoja de vida</button>
-                </div>
-                <div class="col-xs-4 integrante">
-                    <img src="templates/images/integrante.png" alt="Imagen del director">
-                    <p><strong>Rafael Orlando Ortiz Mosquera</strong></p>
-                    <p><strong>Correo</strong> <br>roortizm@unal.edu.co</p>
-                    <p><strong>Telefono</strong> <br>+57 (1) 316 5000</p>
-                    <button class="btn">Hoja de vida</button>
-                </div>
-            </div>
-        </section>
-        <section class="container integrantes" class="d-flex">
-            <h3>Estudiantes</h3>
-            <div class="row contenedorIntegrantes">
-                <div class="col-xs-4 integrante">
-                    <img src="templates/images/integrante.png" alt="Imagen del director">
-                    <p><strong>Rafael Orlando Ortiz Mosquera</strong></p>
-                    <p><strong>Correo</strong> <br>roortizm@unal.edu.co</p>
-                    <p><strong>Telefono</strong> <br>+57 (1) 316 5000</p>
-                    <button class="btn">Hoja de vida</button>
-                </div>
-                <div class="col-xs-4 integrante">
-                    <img src="templates/images/integrante.png" alt="Imagen del director">
-                    <p><strong>Rafael Orlando Ortiz Mosquera</strong></p>
-                    <p><strong>Correo</strong> <br>roortizm@unal.edu.co</p>
-                    <p><strong>Telefono</strong> <br>+57 (1) 316 5000</p>
-                    <button class="btn">Hoja de vida</button>
-                </div>
-            </div>
+
+        <section>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>No</td>
+                        <td>Tesis</td>
+                        <td>Año</td>
+                        <td>Autor</td>
+                        <td>Director</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Evaluación del modelo hidrológico Dynamic Water Balancea escala diaria en cuencas tropicales
+                        </td>
+                        <td>2022</td>
+                        <td>Camila Andrea García Echeverri</td>
+                        <td>Néstor Alonso Mancipe Muñoz</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Evaluación del modelo hidrológico Dynamic Water Balancea escala diaria en cuencas tropicales
+                        </td>
+                        <td>2022</td>
+                        <td>Camila Andrea García Echeverri</td>
+                        <td>Néstor Alonso Mancipe Muñoz</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Evaluación del modelo hidrológico Dynamic Water Balancea escala diaria en cuencas tropicales
+                        </td>
+                        <td>2022</td>
+                        <td>Camila Andrea García Echeverri</td>
+                        <td>Néstor Alonso Mancipe Muñoz</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Evaluación del modelo hidrológico Dynamic Water Balancea escala diaria en cuencas tropicales
+                        </td>
+                        <td>2022</td>
+                        <td>Camila Andrea García Echeverri</td>
+                        <td>Néstor Alonso Mancipe Muñoz</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Evaluación del modelo hidrológico Dynamic Water Balancea escala diaria en cuencas tropicales
+                        </td>
+                        <td>2022</td>
+                        <td>Camila Andrea García Echeverri</td>
+                        <td>Néstor Alonso Mancipe Muñoz</td>
+                    </tr>
+                </tbody>
+            </table>
+
         </section>
 
     </main>
