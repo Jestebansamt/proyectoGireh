@@ -669,6 +669,9 @@
             box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         }
 
+        tr:not(:last-child) {
+            border-bottom: 1px solid rgb(130, 130, 130);
+        }
         tr {
             display: flex;
             width: 100%;
@@ -676,17 +679,17 @@
             align-items: center;
         }
 
-        tr:not(:last-child) {
-            border-bottom: 1px solid rgb(130, 130, 130);
+        .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+            border-top: none;
         }
 
         td {
-
             display: flex;
             padding: 10px 20px;
             flex-direction: column;
             align-items: center;
             width: 20%;
+            border-top: none;
         }
 
         tr:first-child td {
@@ -694,6 +697,12 @@
             font-size: 18px;
             background: var(--Blue-2, #5DB1EC);
         }
+
+        .table-container{
+            display: flex;
+            justify-content: center;
+        }
+
 
         @media (max-width: 992px) {
             .container {
@@ -712,7 +721,6 @@
             header .container {
                 margin-left: 0px;
             }
-
         }
     </style>
 
@@ -741,60 +749,63 @@
 
         </section>
 
-        <section>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>No</td>
-                        <td>Tesis</td>
-                        <td>Año</td>
-                        <td>Autor</td>
-                        <td>Director</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Evaluación del modelo hidrológico Dynamic Water Balancea escala diaria en cuencas tropicales
-                        </td>
-                        <td>2022</td>
-                        <td>Camila Andrea García Echeverri</td>
-                        <td>Néstor Alonso Mancipe Muñoz</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Evaluación del modelo hidrológico Dynamic Water Balancea escala diaria en cuencas tropicales
-                        </td>
-                        <td>2022</td>
-                        <td>Camila Andrea García Echeverri</td>
-                        <td>Néstor Alonso Mancipe Muñoz</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Evaluación del modelo hidrológico Dynamic Water Balancea escala diaria en cuencas tropicales
-                        </td>
-                        <td>2022</td>
-                        <td>Camila Andrea García Echeverri</td>
-                        <td>Néstor Alonso Mancipe Muñoz</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Evaluación del modelo hidrológico Dynamic Water Balancea escala diaria en cuencas tropicales
-                        </td>
-                        <td>2022</td>
-                        <td>Camila Andrea García Echeverri</td>
-                        <td>Néstor Alonso Mancipe Muñoz</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Evaluación del modelo hidrológico Dynamic Water Balancea escala diaria en cuencas tropicales
-                        </td>
-                        <td>2022</td>
-                        <td>Camila Andrea García Echeverri</td>
-                        <td>Néstor Alonso Mancipe Muñoz</td>
-                    </tr>
-                </tbody>
-            </table>
+            <section class="table-container">
+                <div class="">
 
-        </section>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>No</td>
+                                <td>Tesis</td>
+                                <td>Año</td>
+                                <td>Autor</td>
+                                <td>Director</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Evaluación del modelo hidrológico Dynamic Water Balancea escala diaria en cuencas tropicales
+                                </td>
+                                <td>2022</td>
+                                <td>Camila Andrea García Echeverri</td>
+                                <td>Néstor Alonso Mancipe Muñoz</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Evaluación del modelo hidrológico Dynamic Water Balancea escala diaria en cuencas tropicales
+                                </td>
+                                <td>2022</td>
+                                <td>Camila Andrea García Echeverri</td>
+                                <td>Néstor Alonso Mancipe Muñoz</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Evaluación del modelo hidrológico Dynamic Water Balancea escala diaria en cuencas tropicales
+                                </td>
+                                <td>2022</td>
+                                <td>Camila Andrea García Echeverri</td>
+                                <td>Néstor Alonso Mancipe Muñoz</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Evaluación del modelo hidrológico Dynamic Water Balancea escala diaria en cuencas tropicales
+                                </td>
+                                <td>2022</td>
+                                <td>Camila Andrea García Echeverri</td>
+                                <td>Néstor Alonso Mancipe Muñoz</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Evaluación del modelo hidrológico Dynamic Water Balancea escala diaria en cuencas tropicales
+                                </td>
+                                <td>2022</td>
+                                <td>Camila Andrea García Echeverri</td>
+                                <td>Néstor Alonso Mancipe Muñoz</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
 
     </main>
     <!-- <script type="text/javascript">

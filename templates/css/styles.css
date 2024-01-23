@@ -143,6 +143,17 @@
     margin-top: 40px;
 }
 
+.quotes{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -20px;
+}
+
+.quotes div{
+    background-color: var(--azul-bg);
+    width: 100px;
+}
+
 .acerca{
     background-color: var(--azul-bg);
     padding: 80px;
