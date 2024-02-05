@@ -16,7 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Fin de Bootstrap 3 -->
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- <script async="" src="//cse.google.com/adsense/search/async-ads.js"></script>
     <script type="text/javascript" async=""
@@ -579,8 +579,13 @@
             margin: 0;
             border: 0
         }
-         /*GRID IMAGES */
-         .grid-images{
+
+        /*GRID IMAGES */
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .grid-images {
             display: grid;
             width: 100%;
             justify-items: center;
@@ -588,133 +593,159 @@
             margin-bottom: 50px;
             align-items: center;
             overflow: hidden;
-            grid-template-areas: 
-            "imagen1 imagen2 imagen2"
-            "imagen3 imagen4 imagen5"
-            "imagen6 imagen7 imagen8"
-            "imagen9 imagen10 imagen11"
-            "imagen12 imagen13 imagen14"
-            " . imagen15 . ";
-         }
-         .grid-images-1{
+            
+            grid-template-areas:
+                "imagen1 imagen2 imagen2"
+                "imagen3 imagen4 imagen5"
+                "imagen6 imagen7 imagen8"
+                "imagen9 imagen10 imagen11"
+                "imagen12 imagen13 imagen14"
+                " . imagen15 . ";
+        }
+
+        .grid-images-1 {
             grid-area: imagen1;
             object-fit: cover;
             width: 190px;
             height: auto;
-            
-         }
-        .grid-images-2{
+
+        }
+
+        .grid-images-2 {
             grid-area: imagen2;
             width: 350px;
             height: auto;
         }
-        .grid-images-3{
+
+        .grid-images-3 {
             grid-area: imagen3;
             width: 150px;
             height: auto;
         }
-        .grid-images-4{
+
+        .grid-images-4 {
             grid-area: imagen4;
             width: 150px;
             height: auto;
         }
-        .grid-images-5{
+
+        .grid-images-5 {
             grid-area: imagen5;
             width: 150px;
             height: auto;
         }
-        .grid-images-6{
+
+        .grid-images-6 {
             grid-area: imagen6;
             width: 180px;
             height: auto;
         }
-        .grid-images-7{
+
+        .grid-images-7 {
             grid-area: imagen7;
             width: 180px;
             height: auto;
         }
-        .grid-images-8{
+
+        .grid-images-8 {
             grid-area: imagen8;
             width: 130px;
             height: auto;
         }
-        .grid-images-9{
+
+        .grid-images-9 {
             grid-area: imagen9;
             width: 150px;
             height: auto;
         }
-        .grid-images-10{
+
+        .grid-images-10 {
             grid-area: imagen10;
             width: 130px;
             height: auto;
         }
-        .grid-images-11{
+
+        .grid-images-11 {
             grid-area: imagen11;
             width: 150px;
             height: auto;
         }
-        .grid-images-12{
+
+        .grid-images-12 {
             grid-area: imagen12;
             width: 230px;
             height: auto;
         }
-        .grid-images-13{
+
+        .grid-images-13 {
             grid-area: imagen13;
             width: 158px;
             height: auto;
         }
-        .grid-images-14{
+
+        .grid-images-14 {
             grid-area: imagen14;
             width: 180px;
             height: auto;
         }
-        .grid-images-15{
+
+        .grid-images-15 {
             grid-area: imagen15;
             width: 200px;
             height: auto;
         }
-        
-    @media (max-width: 640px){
-        .grid-images{
-            grid-template-areas: 
-            "imagen1"
-            "imagen2"
-            "imagen3"
-            "imagen4"
-            "imagen5"
-            "imagen6"
-            "imagen7"
-            "imagen8"
-            "imagen9"
-            "imagen10"
-            "imagen11"
-            "imagen12"
-            "imagen13"
-            "imagen14"
-            "imagen15";
-        }
-    }
-    /* DIV PRINCIPAL  */
-    .clients-text{
-        padding-top: 80px;
-        margin-bottom: 50px;
-    }
-    .clients-section{
-        background: url('./templates/images/waveHeader.jpg');
-        background-size: contain;
-        background-repeat: no-repeat;
 
-    }
-    .gireh-text{
-        margin-top: 20px;
-        text-wrap: balance;
-        font-size: 1.3em;
-    }
-    .clients-text-main{
-        font-weight: 500;
-        font-size: 5em;
-        margin-bottom: 50px;
-    }
+        @media (max-width: 640px) {
+            .grid-images {
+                
+                grid-template-areas:
+                    "imagen1"
+                    "imagen2"
+                    "imagen3"
+                    "imagen4"
+                    "imagen5"
+                    "imagen6"
+                    "imagen7"
+                    "imagen8"
+                    "imagen9"
+                    "imagen10"
+                    "imagen11"
+                    "imagen12"
+                    "imagen13"
+                    "imagen14"
+                    "imagen15";
+            }
+        }
+
+        /* DIV PRINCIPAL  */
+        .clients-text {
+            padding-top: 80px;
+            padding-bottom: 50px;
+            background-color: #C2DADC;
+        }
+
+        .wave {
+            margin: auto;
+            top: 400px;
+            z-index: -1;
+            height: 380px;
+            width: 100%;
+            transform: rotate(180deg);
+            border-radius: 0px;
+            background-image: url("templates/images/logo-Gireh.png");
+        }
+
+        .gireh-text {
+            margin-top: 20px;
+            text-wrap: balance;
+            font-size: 1.3em;
+        }
+
+        .clients-text-main {
+            font-weight: 500;
+            font-size: 5em;
+            margin-bottom: 50px;
+        }
 
     </style>
 
@@ -731,12 +762,12 @@
         });
     </script> -->
 
-
+    <!--
     <header id="unalTop">
         <div class="logo">
-            <a href="http://unal.edu.co">
-                <!--[if (gte IE 9)|!(IE)]><!-->
-                <svg width="93%" height="93%">
+            <a href="http://unal.edu.co">-->
+                <!-- [if (gte IE 9)|!(IE)]> -->
+                <!-- <svg width="93%" height="93%">
                     <image href="templates/images/escudoUnal.svg" width="100%" height="100%" class="hidden-print">
                     </image>
                 </svg>
@@ -744,7 +775,7 @@
                 <img src="/templates/images/escudoUnal_black.png" class="visible-print">
             </a>
         </div>
-
+    
         <div class="seal">
 
             <img alt="Escudo de la República de Colombia" src="templates/images/sealColombia.png" width="66" height="66"
@@ -828,8 +859,8 @@
 
             <div class="navbar-">
 
-                <div class="mainMenu">
-                    <!---->
+                <div class="mainMenu"> 
+         
                     <div class="btn-group">
                         <div class="btn btn-default dropdown-toggle" data-toggle="dropdown">Equipo Humano<span
                                 class="caret"></span></div>
@@ -974,7 +1005,7 @@
 
             </div>
 
-        </div>
+        </div>-->
 
         <!-- <div class="buscador">
 
@@ -985,8 +1016,10 @@
 
 
 
-    </header>
+    <!-- </header>  -->
+    
 
+<!-- 
     <div id="services">
 
         <div class="indicator"> </div>
@@ -1006,9 +1039,9 @@
             <li><img src="/templates/images/icnServLibrary.png" width="32" height="32" border="0" alt=""><a
                     href="http://bibliotecas.unal.edu.co/" target="_top">Bibliotecas</a></li>
 
-        </ul>
+        </ul> 
 
-    </div>
+    </div> -->
 
 
 
@@ -1027,7 +1060,7 @@
                         <!-- <link href="../templates/catedras_2/css/estilosDiracad_1.css" rel="stylesheet" media="screen"> -->
                         <!-- <link href="../templates/catedras_2/css/gaitan.css" rel="stylesheet" media="screen"> -->
 
-                        <br>
+                      
 
                         <div class="row">
 
@@ -1035,34 +1068,55 @@
                             <main class="detalle">
                                 <!-- Inicio parte editable fdel sitio -->
 
-                                    <div class="clients-section">
-                                        <section class="container text-center" >
-                                            <div class="clients-text">
-                                                <h1 class="clients-text-main">Nuestros Clientes</h1>
-                                                <picture>
-                                                    <img src="templates/images/logo_gireh.png" alt="Logo Gireh" >
-                                                </picture>
-                                                <p class="gireh-text">Grupo de investigacion en ingenieria de <br>Recursos Hidricos</p>
-                                            </div>
-                                            <div class="grid-images container">
-                                                <img class="grid-images-1 " src="./templates/Images-clients/Acueducto.png" alt="Acueducto">
-                                                <img class="grid-images-2" src="./templates/Images-clients/CorporacionDique.png" alt="Corporacion autonoma regional del canal del dique">
-                                                <img class="grid-images-3" src="./templates/Images-clients/CAM.png" alt="Cam">
-                                                <img class="grid-images-4" src="./templates/Images-clients/CVC2.jpg" alt="CVC">
-                                                <img class="grid-images-5" src="./templates/Images-clients/CVS.png" alt="CVS">
-                                                <img class="grid-images-6" src="./templates/Images-clients/epm.png" alt="epm">
-                                                <img class="grid-images-7" src="./templates/Images-clients/Cormagdalena.jpg" alt="Cormagdalena">
-                                                <img class="grid-images-8" src="./templates/Images-clients/GobernacionHuila.jpg" alt="Gobernacion del Huila">
-                                                <img class="grid-images-9" src="./templates/Images-clients/PlataHuila2.png" alt="La plata Huila Colombia">
-                                                <img class="grid-images-10" src="./templates/Images-clients/Ideam.png" alt="IDEAM">
-                                                <img class="grid-images-11" src="./templates/Images-clients/Invias.png" alt="INVIAS">
-                                                <img class="grid-images-12" src="./templates/Images-clients/Minminas.jpg" alt="MinMinas">
-                                                <img class="grid-images-13" src="./templates/Images-clients/Geologico.svg" alt="Servicio Geologico Colombiano">
-                                                <img class="grid-images-14" src="./templates/Images-clients/MinTransporte.png" alt="MinTransporte">
-                                                <img class="grid-images-15" src="./templates/Images-clients/Minambiente.jpg" alt="MinAmbiente">
-                                            </div>
-                                        </section>
-                                    </div>
+                                <div class="clients-section">
+                                    <section class="text-center">
+                                        <div class="clients-text">
+                                            <h1 class="clients-text-main">Nuestros Clientes</h1>
+                                            <picture>
+                                                <img src="templates/images/logo_gireh.png" alt="Logo Gireh">
+                                            </picture>
+                                            <p class="gireh-text">Grupo de investigacion en ingenieria de <br>Recursos
+                                                Hidricos</p>
+                                        </div>
+                                        <div>
+                                            <img class="wave" src="templates/images/waves.png">
+                                        </div>
+                                        <div class="grid-images container">
+                                            <img class="grid-images-1 " src="./templates/Images-clients/Acueducto.png"
+                                                alt="Acueducto">
+                                            <img class="grid-images-2"
+                                                src="./templates/Images-clients/CorporacionDique.png"
+                                                alt="Corporacion autonoma regional del canal del dique">
+                                            <img class="grid-images-3" src="./templates/Images-clients/CAM.png"
+                                                alt="Cam">
+                                            <img class="grid-images-4" src="./templates/Images-clients/CVC2.jpg"
+                                                alt="CVC">
+                                            <img class="grid-images-5" src="./templates/Images-clients/CVS.png"
+                                                alt="CVS">
+                                            <img class="grid-images-6" src="./templates/Images-clients/epm.png"
+                                                alt="epm">
+                                            <img class="grid-images-7" src="./templates/Images-clients/Cormagdalena.jpg"
+                                                alt="Cormagdalena">
+                                            <img class="grid-images-8"
+                                                src="./templates/Images-clients/GobernacionHuila.jpg"
+                                                alt="Gobernacion del Huila">
+                                            <img class="grid-images-9" src="./templates/Images-clients/PlataHuila2.png"
+                                                alt="La plata Huila Colombia">
+                                            <img class="grid-images-10" src="./templates/Images-clients/Ideam.png"
+                                                alt="IDEAM">
+                                            <img class="grid-images-11" src="./templates/Images-clients/Invias.png"
+                                                alt="INVIAS">
+                                            <img class="grid-images-12" src="./templates/Images-clients/Minminas.jpg"
+                                                alt="MinMinas">
+                                            <img class="grid-images-13" src="./templates/Images-clients/Geologico.svg"
+                                                alt="Servicio Geologico Colombiano">
+                                            <img class="grid-images-14"
+                                                src="./templates/Images-clients/MinTransporte.png" alt="MinTransporte">
+                                            <img class="grid-images-15" src="./templates/Images-clients/Minambiente.jpg"
+                                                alt="MinAmbiente">
+                                        </div>
+                                    </section>
+                                </div>
                                 <!-- Final parte editable del sitio -->
                             </main>
 
@@ -1093,7 +1147,7 @@
     <!-- Fin contenido de las páginas-->
 
 
-    <footer class="clear">
+    <!-- <footer class="clear">
         <nav class="col-md-3 col-lg-3 col-sm-3 col-xs-4 col-xxs-6 gobiernoLinea">
             <a href="http://www.legal.unal.edu.co" target="_top">Régimen Legal</a>
             <a href="http://personal.unal.edu.co" target="_top">Talento humano</a>
@@ -1162,7 +1216,7 @@
 
         </div>
 
-    </footer>
+    </footer> -->
 
 
 
